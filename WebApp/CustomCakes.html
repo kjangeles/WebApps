@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Order customizable cakes for any occasion">
+    <meta name="keywords" content="customizable cakes, weddings cakes, birthday cakes">
+    <meta name="author" content="Keren Angeles">
+    <title>The Sweet Life | Custom Cakes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="index.html"><img src="./img/sweetlifeLogo.png" alt="logo" width="70" height="70" opacity=0.5 style="float: left" hspace="2" vspace="2"></a>
+        </div>
+        <div id="branding">
+          <h1><em>The <span class="highlight">Sweet</span> Life Bakery</em></h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="inactive"><a href="index.html">Home</a></li>
+            <li class="inactive"><a href="About.html">About US</a></li>
+            <li class="current"><a href="CustomCakes.html">Custom Cakes</a></li>
+            <li class="inactive"><a href="ContactUS.html">Contact US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="boxes">
+      <h1 class="w3-center purple"style="margin-bottom:64px">Customize your cake for that special occasion!</h1>
+       <div class="w3-row-padding">
+          <div class="w3-container w3-third">
+            <img src="birthdaycake4.jpg" style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+          <div class="w3-container w3-third">
+            <img src="weddingcake4.jpg" style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+          <div class="w3-container w3-third">
+            <img src="gradcake4.jpg" style="width:100%;cursor:pointer"
+              onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+      </div>
+
+      <div id="modal" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="img1" style="width:100%">
+        </div>
+      </div>
+  </section>
+
+  <section id="boxes">
+  <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <div class="w3-row w3-center w3-border w3-border-purple">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Birthday Cakes');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-purple purple">Birthday / Wedding Cakes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Specialty Cakes');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-purple purple">Specialty Cakes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Flavors');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-purple purple">Flavors / Toppings</div>
+      </a>
+    </div>
+
+    <div id="Birthday Cakes" class="w3-container menu w3-padding-32 w3-white">
+      <h1 class="purple"><b>6" round</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>8" round</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$30.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>10" round</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$40.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>Half Sheet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$50.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>Full Sheet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$70.00</span></h1>
+      <hr>
+    </div>
+    <div id="Specialty Cakes" class="w3-container menu w3-padding-32 w3-white">
+      <h1 class="purple"><b>6" round</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>8" round</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>10" round</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$35.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>Half Sheet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$45.00</span></h1>
+      <hr>
+      <h1 class="purple"><b>Full Sheet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$60.00</span></h1>
+      <hr>
+    </div>
+    <div id="Flavors" class="w3-container menu w3-padding-32 w3-white">
+      <h1 class="purple"><b>FLAVORS</b> <span class="w3-right w3-tag w3-dark-grey w3-round">TOPPINGS</span></h1>
+      <hr>
+      <h1 class="purple"><b>Triple Chocolate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Chocolate-covered Strawberries</span></h1>
+      <hr>
+      <h1 class="purple"><b>Vanilla(Caramel,Raspberry,Plain)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Mini Macaroons</span></h1>
+      <hr>
+      <h1 class="purple"><b>Hazelnut Almond</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Ferrero Rocher Chocolate</span></h1>
+      <hr>
+      <h1 class="purple"><b>Red Velvet</b><span class="w3-right w3-tag w3-dark-grey w3-round">Edible Flowers</span></h1>
+      <hr>
+      <h1 class="purple"><b>Mocha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Crushed Peppermint Candies</span></h1>
+      <hr>
+      <h1 class="purple"><b>Cookies & Cream</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Oreos</span></h1>
+      <hr>
+      <h1 class="purple"><b>Key Lime</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Mini Meringue</span></h1>
+      <hr>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="newsletter">
+  <div class="container">
+    <h1 class ="purple">Craving for new and exciting flavors and toppings?</h1>
+    <form>
+      <button type="submit" class="button_1" onclick="survey()">Click Here!</button>
+    </form>
+  </div>
+</section>
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+    <p class ="purple">The Sweet Life Bakery, Copyright &copy; 2018</p>
+      <div class="w3-section">
+        <a href=https://www.facebook.com/><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href=https://www.instagram.com/><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href=https://www.snapchat.com/><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href=https://www.pinterest.com/><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+        <a href=https://www.twitter.com/><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href=https://www.linkedin.com/><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+</footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

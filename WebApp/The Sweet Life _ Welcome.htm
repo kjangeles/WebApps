@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Order customizable cakes for any occasion">
+    <meta name="keywords" content="customizable cakes, weddings cakes, birthday cakes">
+    <meta name="author" content="Keren Angeles">
+    <title>The Sweet Life | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <ul class="fly-in-text hidden">
+      <li>W</li>
+      <li>E</li>
+      <li>L</li>
+      <li>C</li>
+      <li>O</li>
+      <li>M</li>
+      <li>E</li>
+    </ul>
+    
+    <header>
+      <div class="container">
+        <div id="branding">
+          <em><h1>The <span class="highlight">Sweet</span> Life Bakery</h1></em>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="file:///Users/kerenangeles/Desktop/Website%20Project/index.html">Home</a></li>
+            <li class="inactive"><a href="file:///Users/kerenangeles/Desktop/Website%20Project/About.html">About US</a></li>
+            <li class="inactive"><a href="file:///Users/kerenangeles/Desktop/Website%20Project/CustomCakes.html">Custom Cakes</a></li>
+            <li class="inactive"><a href="file:///Users/kerenangeles/Desktop/Website%20Project/ContactUS.html">Contact US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow1.JPG" style="width: 100%; display: none;">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow2.jpg" style="width: 100%; display: none;">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow3.jpg" style="width: 100%; display: none;">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow4.jpg" style="width: 100%; display: none;">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow5.jpg" style="width: 100%; display: block;">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow6.jpg" style="width: 100%; display: none;">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow7.jpg" style="width: 100%; display: none;">
+        <img class="mySlides" src="./The Sweet Life _ Welcome_files/slideshow8.jpg" style="width: 100%; display: none;">
+      </div>
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+      }
+      </script>
+
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To See Our Newest Creations</h1>
+        <form>
+          <input type="email" placeholder="Enter Email">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./The Sweet Life _ Welcome_files/birthdaycake4.jpg">
+          <h3>Birthdays</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box">
+          <img src="./The Sweet Life _ Welcome_files/weddingcake4.jpg">
+          <h3>Weddings</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box">
+          <img src="./The Sweet Life _ Welcome_files/gradcake4.jpg">
+          <h3>Special Occasions</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>The Sweet Life, Copyright © 2018</p>
+    </footer>
+
+
+</body></html>

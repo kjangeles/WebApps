@@ -1,0 +1,228 @@
+body{
+  font-family: "Times New Roman", Georgia, Serif;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+/* Global */
+.container{
+  width: 80%
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button_1{
+  height: 38px;
+  background: #8A5A81;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:#FFFFFF;
+}
+
+.dark{
+  padding: 15px;
+  background: #493B46;
+  color: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.page-title{
+  color:#8A5A81;
+}
+
+/*Header*/
+header a{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background:#FFFFFF;
+  color:#CCCCCC;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #CCCCCC 3px solid;
+}
+
+header a{
+  color:#FFFFFF:
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  color: #FFFFFF;
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  text-decoration: none;
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  text-decoration:none;
+  color: #8A5A81;
+  font-weight: bold;
+}
+
+header .inactive a{
+  text-decoration: none;
+  color: #CCCCCC;
+}
+
+header a:hover{
+  text-decoration: none;
+  color:#CCCCCC;
+  font-weight: bold;
+}
+
+/*Showcase*/
+#showcase{
+  min-height: 400px;
+  text-align: center;
+  color: #8A5A81;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+/*Newsletter*/
+#newsletter{
+  padding: 15px;
+  color: #FFFFFF;
+  background:#CCCCCC;
+}
+
+#newsletter h1{
+  float: left;
+}
+
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/*Boxes*/
+
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width: 350px;
+  height: 350px;
+}
+
+/*Sidebar*/
+
+aside#sidebar{
+  float:right;
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+}
+
+aside#sidebar .message input, aside#sidebar .message textarea{
+  width: 90%;
+  padding: 5px;
+}
+
+/*main-col*/
+
+article#main-col{
+  float: left;
+  color: #FF9C9B;
+  width: 65%;
+  margin-top: 10px;
+}
+
+/*Custom Cakes*/
+ul#Cakes {
+  color: #8A5A81;
+}
+
+ul#Cakes li{
+  list-style: none;
+  padding: 20px;
+  border: #e6e6e6;
+  margin-bottom: 5px;
+  background: #CCCCCC;
+}
+
+/*Footer*/
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #8A5A81;
+  background-color: #CCCCCC;
+  text-align: center;
+}
+
+/*Media Queries*/
+@@media(max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  section div{
+    float:none;
+    text-align: center;
+    width: 100%
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+}
